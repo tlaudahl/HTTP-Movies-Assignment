@@ -11,7 +11,7 @@ body {
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 1rem;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   margin: 1rem auto;
 }
@@ -64,6 +64,51 @@ body {
 .save-button:hover {
   background-color: green;
   color: white;
+  cursor: pointer;
+}
+
+
+.delete-button {
+  position: absolute;
+  top: 75px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+
+.delete-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.update-button {
+  position: absolute;
+  top: 125px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+
+.update-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.update {
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+  margin-top: 10px;
+}
+
+.update:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
 }
 
 .home-button {
@@ -74,4 +119,26 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+
+form {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  margin: 0 auto;
+}
+
+form input {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
